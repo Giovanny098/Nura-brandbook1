@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nura — Evolución de Identidad · Caso de Estudio por Mercado Studio</title>
+    
+    <!-- Tipografía Editorial / General Sans via Fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GSAP Core & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    
+    <style>
+        body {
+            font-family: 'General Sans', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+            color: transparent;
+        }
+        .custom-border {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .reveal-title, .reveal-text, .reveal-block {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#FFD400] selection:text-black">
+
+    <!-- Header / Mercado Studio Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 md:px-12 py-6 flex justify-between items-center custom-border border-b bg-black/10 backdrop-blur-md">
+        <div class="text-sm font-semibold tracking-widest uppercase">MERCADO STUDIO</div>
+        <div class="text-xs text-gray-400 font-mono tracking-wider">CASE STUDY: NURA V2</div>
+    </nav>
+
+    <!-- 01. HERO SECTION -->
+    <section class="min-h-screen flex flex-col justify-between px-6 md:px-12 pt-32 pb-12 relative" id="hero">
+        <div class="max-w-6xl mt-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block mb-6">01 / INTRODUCCIÓN</span>
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white leading-[0.95] reveal-title">
+                Una identidad que encarna a su comunidad.
+            </h1>
+        </div>
+        
+        <div class="grid md:grid-cols-12 gap-8 items-end mt-12">
+            <div class="md:col-span-6 lg:col-span-5 reveal-text">
+                <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
+                    NURA ocupa el espacio de belleza y nutrición funcional en Lima que ninguna marca local ha reclamado todavía. Tres direcciones creativas diseñadas para construir pertenencia.
+                </p>
+            </div>
+            <div class="md:col-span-6 lg:col-span-7 flex md:justify-end">
+                <button onclick="lenis.scrollTo('#contexto')" class="group flex items-center gap-4 border border-white/20 hover:border-[#FFD400] px-6 py-4 rounded-full transition-all duration-300 backdrop-blur-sm cursor-pointer">
+                    <span class="text-xs font-mono uppercase tracking-wider text-gray-400 group-hover:text-[#FFD400] transition-colors">Iniciar Lectura Editorial</span>
+                    <span class="text-sm transition-transform duration-300 group-hover:translate-y-1 text-[#FFD400]">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02. CONTEXTO -->
+    <section class="py-32 px-6 md:px-12 custom-border border-t bg-[#0a0a0a]" id="contexto">
+        <div class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block">02 / CONTEXTO ESTRATÉGICO</span>
+            </div>
+            <div class="md:col-span-8 max-w-3xl space-y-8 reveal-text">
+                <h2 class="text-3xl md:text-5xl font-normal tracking-tight leading-snug text-white">
+                    Nura deja de hablar de proteína en abstracto. El rediseño no es solo estético; responde a la demanda de un mercado que exige un rostro humano.
+                </h2>
+                <p class="text-lg text-gray-400 font-light leading-relaxed">
+                    Inspirados en el modelo de SOS Life, buscamos alinear la presentación visual con un ecosistema enfocado en el crecimiento continuo, sofisticación global y una profunda conexión colectiva, transformando la N en cuerpo y trazo humano.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. OBJETIVOS -->
+    <section class="py-32 px-6 md:px-12 custom-border border-t" id="objetivos">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block mb-16">03 / ATRIBUTOS DEL NORTE VISUAL</span>
+            
+            <div class="space-y-2 group/list">
+                <div class="flex justify-between items-baseline py-8 border-b border-white/5 tracking-tighter transition-opacity duration-300 group-hover/list:opacity-30 hover:!opacity-100 group">
+                    <span class="text-5xl md:text-8xl font-light text-white transition-colors duration-300 group-hover:text-[#FFD400]">Cercanía</span>
+                    <span class="text-xs font-mono text-gray-500">Comunidad Real</span>
+                </div>
+                <div class="flex justify-between items-baseline py-8 border-b border-white/5 tracking-tighter transition-opacity duration-300 group-hover/list:opacity-30 hover:!opacity-100 group">
+                    <span class="text-5xl md:text-8xl font-light text-white transition-colors duration-300 group-hover:text-[#FFD400]">Premium</span>
+                    <span class="text-xs font-mono text-gray-500">Sofisticación Sin Distancia</span>
+                </div>
+                <div class="flex justify-between items-baseline py-8 border-b border-white/5 tracking-tighter transition-opacity duration-300 group-hover/list:opacity-30 hover:!opacity-100 group">
+                    <span class="text-5xl md:text-8xl font-light text-white transition-colors duration-300 group-hover:text-[#FFD400]">Colectividad</span>
+                    <span class="text-xs font-mono text-gray-500">Pertenencia</span>
+                </div>
+                <div class="flex justify-between items-baseline py-8 border-b border-white/5 tracking-tighter transition-opacity duration-300 group-hover/list:opacity-30 hover:!opacity-100 group">
+                    <span class="text-5xl md:text-8xl font-light text-white transition-colors duration-300 group-hover:text-[#FFD400]">Versatilidad</span>
+                    <span class="text-xs font-mono text-gray-500">Ecosistema Híbrido</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04. TERRITORIO DE MARCA -->
+    <section class="py-40 px-6 overflow-hidden custom-border border-t bg-[#050505]" id="territorio">
+        <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block px-6 md:px-12 mb-12">04 / TERRITORIO DE MARCA</span>
+        <div class="flex flex-col gap-2 items-center justify-center select-none whitespace-nowrap">
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-stroke scroll-word-left">COMUNIDAD</div>
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-white/90 scroll-word-right">PROTEÍNA FUNCIONAL</div>
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-stroke scroll-word-left">BELLEZA REAL</div>
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-white/80 scroll-word-right">SOFISTICACIÓN</div>
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-stroke scroll-word-left">PERTENENCIA</div>
+            <div class="text-6xl md:text-9xl font-black tracking-widest uppercase text-[#FFD400] scroll-word-right">HUMANO</div>
+        </div>
+    </section>
+
+    <!-- 05. DIRECCIONES CREATIVAS -->
+    <section class="py-32 px-6 md:px-12 custom-border border-t" id="direcciones">
+        <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block mb-20">05 / DIRECCIONES CREATIVAS ESTRATÉGICAS</span>
+
+        <!-- DIRECCIÓN CREATIVA I -->
+        <div class="mb-40 custom-border border-b pb-24 reveal-block">
+            <div class="grid md:grid-cols-12 gap-12 items-start mb-16">
+                <div class="md:col-span-5">
+                    <span class="text-sm font-mono text-[#FFD400] block mb-2">I</span>
+                    <h3 class="text-3xl md:text-5xl font-medium tracking-tight text-white mb-8">Propuesta 01 · Esencia Sólida</h3>
+                    <div class="space-y-4 font-light text-gray-400 text-sm">
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Concepto:</strong> El núcleo invariable e histórico de la marca refinado al extremo.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Intención:</strong> Proyectar estabilidad, solidez y un estándar premium indiscutible.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Personalidad:</strong> Atemporal, culta, sofisticada.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Qué comunica:</strong> Seguridad, herencia y la certeza de un producto de alta gama para retail.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <div class="w-full aspect-[16/11] bg-zinc-950 rounded-lg overflow-hidden relative group border border-white/5 shadow-2xl flex items-center justify-center">
+                        <!-- URL Codificada de forma segura para soportar los espacios del archivo original -->
+                        <img src="isotipo%20-%20color%201.png" alt="Propuesta Visual 1 - Nura Esencia Sólida" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 pointer-events-none"></div>
+                        <div class="absolute bottom-6 left-6 z-20 text-xs font-mono tracking-widest text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1 rounded">ASSET: ISOTIPO - COLOR 1.PNG // ENFOQUE RETAIL PREMIUM</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Brandbook Card 1 -->
+            <div class="max-w-xl ml-auto border border-white/10 p-8 rounded-xl bg-gradient-to-br from-zinc-900 to-black hover:border-[#FFD400] transition-all duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-xl font-medium text-white mb-1">Brandbook · Esencia</h4>
+                        <p class="text-xs text-gray-500 font-mono">DOCUMENTACIÓN DE SISTEMA VISUAL</p>
+                    </div>
+                    <span class="text-xs font-mono text-[#FFD400] border border-[#FFD400]/20 px-2 py-1 rounded">V2 EXTENDED</span>
+                </div>
+                <ul class="grid grid-cols-2 gap-3 text-sm text-gray-400 mb-8 font-light">
+                    <li>✓ Sello Independiente</li><li>✓ Paleta Cromática Premium</li><li>✓ Sistema Visual Limpio</li>
+                    <li>✓ Construcción Geométrica</li><li>✓ Tipografía Editorial</li><li>✓ Aplicaciones High-End</li>
+                </ul>
+                <a href="#" class="w-full text-center block py-3 rounded-lg bg-white text-black font-medium text-sm hover:bg-[#FFD400] transition-colors duration-300">
+                    Ver Brandbook en Figma ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- DIRECCIÓN CREATIVA II -->
+        <div class="mb-40 custom-border border-b pb-24 reveal-block">
+            <div class="grid md:grid-cols-12 gap-12 items-start mb-16">
+                <div class="md:col-span-5 md:order-2">
+                    <span class="text-sm font-mono text-[#FFD400] block mb-2">II</span>
+                    <h3 class="text-3xl md:text-5xl font-medium tracking-tight text-white mb-8">Propuesta 02 · Fluidez Colectiva</h3>
+                    <div class="space-y-4 font-light text-gray-400 text-sm">
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Concepto:</strong> La marca como un organismo vivo, dinámico y en constante evolución junto a su entorno.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Intención:</strong> Romper con la rigidez corporativa para conectar desde la autenticidad y el movimiento.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Personalidad:</strong> Vibrante, empática, contemporánea.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Qué comunica:</strong> Energía, flexibilidad y un fuerte sentido de pertenencia colectiva nativa digital.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7 md:order-1">
+                    <div class="w-full aspect-[16/11] bg-zinc-950 rounded-lg overflow-hidden relative group border border-white/5 shadow-2xl flex items-center justify-center">
+                        <!-- URL Codificada de forma segura para soportar los espacios del archivo original -->
+                        <img src="isotipo%20-%20color%202.png" alt="Propuesta Visual 2 - Nura Fluidez Colectiva" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 pointer-events-none"></div>
+                        <div class="absolute bottom-6 left-6 z-20 text-xs font-mono tracking-widest text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1 rounded">ASSET: ISOTIPO - COLOR 2.PNG // ADAPTACIÓN TEXTIL Y CONTENIDO</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Brandbook Card 2 -->
+            <div class="max-w-xl mr-auto border border-white/10 p-8 rounded-xl bg-gradient-to-br from-zinc-900 to-black hover:border-[#FFD400] transition-all duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-xl font-medium text-white mb-1">Brandbook · Fluidez</h4>
+                        <p class="text-xs text-gray-500 font-mono">DOCUMENTACIÓN DE SISTEMA VISUAL</p>
+                    </div>
+                    <span class="text-xs font-mono text-[#FFD400] border border-[#FFD400]/20 px-2 py-1 rounded">V2 EXTENDED</span>
+                </div>
+                <ul class="grid grid-cols-2 gap-3 text-sm text-gray-400 mb-8 font-light">
+                    <li>✓ Elementos Dinámicos</li><li>✓ Paleta Orgánica</li><li>✓ Retícula Flexible</li>
+                    <li>✓ Trazo Humano</li><li>✓ Tipografía Humana</li><li>✓ Soportes Digitales</li>
+                </ul>
+                <a href="#" class="w-full text-center block py-3 rounded-lg bg-white text-black font-medium text-sm hover:bg-[#FFD400] transition-colors duration-300">
+                    Ver Brandbook en Figma ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- DIRECCIÓN CREATIVA III -->
+        <div class="mb-40 custom-border border-b pb-24 reveal-block">
+            <div class="grid md:grid-cols-12 gap-12 items-start mb-16">
+                <div class="md:col-span-5">
+                    <span class="text-sm font-mono text-[#FFD400] block mb-2">III</span>
+                    <h3 class="text-3xl md:text-5xl font-medium tracking-tight text-white mb-8">Propuesta 03 · Vitalidad Híbrida</h3>
+                    <div class="space-y-4 font-light text-gray-400 text-sm">
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Concepto:</strong> El balance perfecto entre la estructura técnica y la calidez del factor humano.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Intención:</strong> Crear un puente visual resistente para el uso diario sin perder elegancia.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Personalidad:</strong> Versátil, resuelta, balanceada.</p>
+                        <p><strong class="text-white font-normal uppercase block text-xs font-mono tracking-wider text-gray-500">Qué comunica:</strong> Funcionalidad, adaptabilidad y una estética premium que transita entre la calle y el empaque.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <div class="w-full aspect-[16/11] bg-zinc-950 rounded-lg overflow-hidden relative group border border-white/5 shadow-2xl flex items-center justify-center">
+                        <!-- URL Codificada de forma segura para soportar los espacios del archivo original -->
+                        <img src="isotipo%20-%20color%203.png" alt="Propuesta Visual 3 - Nura Vitalidad Híbrida" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 pointer-events-none"></div>
+                        <div class="absolute bottom-6 left-6 z-20 text-xs font-mono tracking-widest text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1 rounded">ASSET: ISOTIPO - COLOR 3.PNG // EMBALAJE Y STICKERS URBANOS</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Brandbook Card 3 -->
+            <div class="max-w-xl ml-auto border border-white/10 p-8 rounded-xl bg-gradient-to-br from-zinc-900 to-black hover:border-[#FFD400] transition-all duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-xl font-medium text-white mb-1">Brandbook · Vitalidad</h4>
+                        <p class="text-xs text-gray-500 font-mono">DOCUMENTACIÓN DE SISTEMA VISUAL</p>
+                    </div>
+                    <span class="text-xs font-mono text-[#FFD400] border border-[#FFD400]/20 px-2 py-1 rounded">V2 EXTENDED</span>
+                </div>
+                <ul class="grid grid-cols-2 gap-3 text-sm text-gray-400 mb-8 font-light">
+                    <li>✓ Isotipo de Alto Impacto</li><li>✓ Alto Contraste</li><li>✓ Adaptación Multitarget</li>
+                    <li>✓ Trazo Robusto</li><li>✓ Tipografía Híbrida</li><li>✓ Ecosistema de Packaging</li>
+                </ul>
+                <a href="#" class="w-full text-center block py-3 rounded-lg bg-white text-black font-medium text-sm hover:bg-[#FFD400] transition-colors duration-300">
+                    Ver Brandbook en Figma ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. MATRIZ Y COMPARATIVA COMPLETA RESTAURADA -->
+    <section class="py-32 px-6 md:px-12 custom-border border-t bg-[#020202]" id="comparativa">
+        <div class="max-w-7xl mx-auto reveal-block">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block mb-6">06 / MATRIZ DE PERCEPCIÓN COMPARATIVA</span>
+            <h2 class="text-3xl md:text-5xl font-medium tracking-tight text-white mb-8">Insight Final y Destino Comercial</h2>
+            <p class="text-lg text-gray-400 font-light leading-relaxed max-w-4xl mb-16">
+                Esta matriz define el norte estratégico de cada camino conceptual. Cada propuesta visual modela un ecosistema de negocio y una proyección comercial completamente distinta para la marca. No elegimos solo un logo; elegimos el futuro comercial de NURA.
+            </p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left min-w-[800px] border-collapse">
+                    <thead>
+                        <tr class="border-b border-white/10 text-xs font-mono uppercase text-gray-400">
+                            <th class="pb-6 font-normal w-1/4">Eje Estratégico</th>
+                            <th class="pb-6 font-normal text-[#FFD400] w-1/4">Propuesta 01 (color 1)</th>
+                            <th class="pb-6 font-normal text-[#FFD400] w-1/4">Propuesta 02 (color 2)</th>
+                            <th class="pb-6 font-normal text-[#FFD400] w-1/4">Propuesta 03 (color 3)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm font-light text-gray-300 divide-y divide-white/5">
+                        <tr>
+                            <td class="py-6 font-mono text-xs uppercase text-gray-500">Enfoque de Diseño</td>
+                            <td class="py-6 pr-6 font-normal text-white">Solidez, confianza y trazabilidad de producto.</td>
+                            <td class="py-6 pr-6 font-normal text-white">Cercanía, dinamismo y apropiación comunitaria.</td>
+                            <td class="py-6 pr-6 font-normal text-white">Resistencia, balance técnico y versatilidad diaria.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 font-mono text-xs uppercase text-gray-500">Proyección Comercial</td>
+                            <td class="py-6 pr-6 text-gray-400"><strong>Retail Premium Tradicional.</strong> Pensado para destacar de forma seria y corporativa en anaqueles de alta gama.</td>
+                            <td class="py-6 pr-6 text-gray-400"><strong>Nativa de Comunidad Digital.</strong> Ideal para canales orgánicos, boca a boca y fuerte merchandising textil.</td>
+                            <td class="py-6 pr-6 text-gray-400"><strong>Ecosistema Híbrido Urbano.</strong> Diseñado para convivir sin pérdidas tanto en empaques finos como en stickers y delivery de calle.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 font-mono text-xs uppercase text-gray-500">Personalidad Base</td>
+                            <td class="py-6 pr-6 text-gray-400">Solemne, hereditaria, arquitectónica y severa.</td>
+                            <td class="py-6 pr-6 text-gray-400">Orgánica, intuitiva, humana y vibrante.</td>
+                            <td class="py-6 pr-6 text-gray-400">Audaz, resuelta, balanceada y simétrica.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 font-mono text-xs uppercase text-gray-500">Nivel de Elegancia</td>
+                            <td class="py-6 pr-6 text-gray-400">Alta costura / Minimalismo institucional rígido.</td>
+                            <td class="py-6 pr-6 text-gray-400">Sofisticación natural / Sutil sin barreras de distancia.</td>
+                            <td class="py-6 pr-6 text-gray-400">Elegancia audaz / Contraste nítido y de alto impacto.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07. CIERRE -->
+    <section class="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 custom-border border-t relative" id="cierre">
+        <div class="max-w-5xl">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-500 block mb-8">07 / CONCLUSIÓN DEL ESTUDIO</span>
+            <p class="text-3xl md:text-6xl font-light tracking-tight text-white leading-tight reveal-title">
+                Más que un cambio estético, construimos la plataforma visual que la comunidad de Nura ya está pidiendo.
+            </p>
+        </div>
+        
+        <div class="absolute bottom-12 left-0 w-full px-6 md:px-12 flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs font-mono text-gray-600 gap-4">
+            <div>© 2026 NURA CORPO. ALL RIGHTS RESERVED.</div>
+            <div>DESIGN DIRECTION BY <span class="text-white">MERCADO STUDIO</span></div>
+        </div>
+    </section>
+
+    <!-- Script Engine -->
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray('.reveal-title').forEach(title => {
+            gsap.fromTo(title, { y: 40, opacity: 0 }, {
+                y: 0, opacity: 1, duration: 1, ease: 'power4.out',
+                scrollTrigger: { trigger: title, start: 'top 90%' }
+            });
+        });
+
+        gsap.utils.toArray('.reveal-text, .reveal-block').forEach(block => {
+            gsap.fromTo(block, { y: 30, opacity: 0 }, {
+                y: 0, opacity: 1, duration: 1.2, ease: 'power3.out',
+                scrollTrigger: { trigger: block, start: 'top 85%' }
+            });
+        });
+
+        gsap.to('.scroll-word-left', {
+            x: -150,
+            scrollTrigger: { trigger: '#territorio', start: 'top bottom', end: 'bottom top', scrub: 1 }
+        });
+
+        gsap.to('.scroll-word-right', {
+            x: 150,
+            scrollTrigger: { trigger: '#territorio', start: 'top bottom', end: 'bottom top', scrub: 1 }
+        });
+    </script>
+</body>
+</html>
